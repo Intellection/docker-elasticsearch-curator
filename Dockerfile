@@ -1,6 +1,6 @@
 FROM alpine:3.5
 
-MAINTAINER Zappi DevOps <devops@zappistore.com>
+LABEL maintainer "Zappi DevOps <devops@zappistore.com>"
 
 ARG APP_DEPS="python py-setuptools"
 ARG BUILD_DEPS="py-pip"
