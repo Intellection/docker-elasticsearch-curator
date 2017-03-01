@@ -4,3 +4,24 @@
 
 Elasticsearch Curator helps you curate, or manage, your Elasticsearch indices
 and snapshots.
+
+## Usage
+
+```
+$ docker run -it zappi/elasticsearch-curator --help
+Usage: curator [OPTIONS] ACTION_FILE
+
+  Curator for Elasticsearch indices.
+
+  See http://elastic.co/guide/en/elasticsearch/client/curator/current
+
+Options:
+  --config PATH  Path to configuration file. Default: ~/.curator/curator.yml
+  --dry-run      Do not perform any changes.
+  --version      Show the version and exit.
+  --help         Show this message and exit.
+```
+
+For more details [see official documentation][1].
+
+[1]: https://www.elastic.co/guide/en/elasticsearch/client/curator/current/index.html
