@@ -4,7 +4,7 @@ LABEL maintainer "Zappi DevOps <devops@zappistore.com>"
 
 ARG APP_DEPS="python py-setuptools"
 ARG BUILD_DEPS="py-pip"
-ARG CURATOR_VERSION="5.5.4"
+ARG CURATOR_VERSION="5.6.0"
 
 RUN apk --update add ${APP_DEPS} ${BUILD_DEPS} && \
     pip install elasticsearch-curator==${CURATOR_VERSION} && \
