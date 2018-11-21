@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.0
+
+* Upgrade Curator to v5.6.0.
+
 ## 5.0.0
 
 * Upgrade Curator to v5.5.4.
