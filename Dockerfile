@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:3.10.3
 
 LABEL maintainer "Zappi DevOps <devops@zappistore.com>"
 
