@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.2.0
+
+* Upgrade Alpine to v3.10.3.
+* Bump curator to v5.8.1.
+
 ## 5.1.0
 
 * Upgrade Curator to v5.6.0.
