@@ -4,6 +4,7 @@
 
 * Upgrade Alpine to v3.10.3.
 * Bump curator to v5.8.1.
+* Set containers to run as `nobody` user & group.
 
 Ps: Going forward, our version will track the version of Curator that's packaged.
 
