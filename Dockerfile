@@ -11,4 +11,5 @@ RUN apk --update add ${APP_DEPS} ${BUILD_DEPS} && \
     apk del ${BUILD_DEPS} && \
     rm -rf /var/cache/apk/*
 
+USER nobody:nobody
 ENTRYPOINT ["/usr/bin/curator"]
