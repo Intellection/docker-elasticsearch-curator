@@ -1,15 +1,12 @@
-FROM alpine:3.10.3
+ARG PYVER=3.11.7
+ARG ALPTAG=3.18
+FROM python:${PYVER}-alpine${ALPTAG}
 
-LABEL maintainer "Zappi DevOps <devops@zappistore.com>"
+LABEL maintainer "Zappi Site Reliability Engineering (SRE) <sre@zappistore.com>"
 
-ARG APP_DEPS="python py-setuptools"
-ARG BUILD_DEPS="py-pip"
-ARG CURATOR_VERSION="5.8.1"
+ARG CURATOR_VERSION="8.0.10"
 
-RUN apk --update add ${APP_DEPS} ${BUILD_DEPS} && \
-    pip install elasticsearch-curator==${CURATOR_VERSION} && \
-    apk del ${BUILD_DEPS} && \
-    rm -rf /var/cache/apk/*
+RUN pip3 install elasticsearch-curator==${CURATOR_VERSION}
 
 USER nobody:nobody
-ENTRYPOINT ["/usr/bin/curator"]
+ENTRYPOINT ["/usr/local/bin/curator"]
